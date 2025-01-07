@@ -1,0 +1,25 @@
+body{
+    /*colors*/
+    --background-color:F0F0F0;
+    --improvemnet-background-color-orange:FFD08A;
+    --error-background-color-red:FFDADA;
+    --good-background-color-green:BBFFD8;
+    --progress-circle-background-darkblue:0275FF;
+    --progress-circle-background-lightblue:CCE3FF;
+    --prgress-circle-background-darkorgange:FF9800;
+    --background-color-header:ffffff;
+
+    --font-color-general:5D666A;
+    --font-color-header:0275FF;
+    --font-color-dashboard:87929F;
+    --good-font-color-green:00883C;
+    --error-font-color-red:B50000;
+
+
+    /*font-family*/
+    --font-family-general:
+
+
+    /*font-size*/
+    
+}

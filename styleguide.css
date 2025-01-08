@@ -17,9 +17,11 @@ body{
 
 
     /*font-family*/
-    --font-family-general:
+    --font-family-general:"Outfit", serif;
 
 
     /*font-size*/
-    
+    --font-bold:bold;
+    --font-light:light;
+    --font-regular:normal;
 }

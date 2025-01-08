@@ -1,0 +1,36 @@
+
+
+
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+  
+  div {
+	/* vierkant en rond	*/
+	width: 10em;
+	aspect-ratio:1;
+	border-radius:50%;
+
+    background-image:conic-gradient(
+		darkorange 71%,
+		orange 0
+    );
+
+    mask-image:radial-gradient(
+		closest-side,
+		transparent 4em,
+		green 0
+	)
+  }
+
+
+
+  

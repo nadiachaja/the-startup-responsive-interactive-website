@@ -1,6 +1,41 @@
 body {
   font-family: var(--font-family-general);
+  margin: 0;
 }
+
+main{
+  background-color: var(--background-color);
+}
+
+nav{
+  background-color: var(--background-color-header);
+}
+
+
+h1 {
+  display: grid;
+
+  color: var(--font-color-dashboard);
+  font-size: var(--paragraph-small);
+}
+
+h1 strong {
+  color: var(--font-color-general);
+  font-size: var(--titel-font-size-desktop);
+}
+
+h2 {
+  font-size: var(clamp(1.625rem, 0.8846rem + 2.8205vw, 3rem));
+}
+
+
+
+
+
+
+
+
+
 
 
 .visually-hidden {
@@ -96,23 +131,35 @@ div:nth-of-type(4) {
 
 
 
-h1 {
-  display: grid;
 
-  color: var(--font-color-dashboard);
-  font-size: var(--paragraph-small);
+
+
+
+
+@media screen and (min-width:600px) {
+
+  .logo-accessdash-img{
+    display: flex;
+    justify-self: center;
+  }
+
+  body {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    margin: 0;
+  }
+  
+  main{
+    background-color: var(--background-color);
+    grid-column: 2;
+  }
+  
+  nav{
+    background-color: var(--background-color-header);
+    grid-column: 1;
+  }
+  
 }
-
-h1 strong {
-  color: var(--font-color-general);
-  font-size: var(--titel-font-size-desktop);
-}
-
-h2 {
-  font-size: var(clamp(1.625rem, 0.8846rem + 2.8205vw, 3rem));
-}
-
-
 
 
 

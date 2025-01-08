@@ -31,6 +31,22 @@
 	)
   }
 
+  h1 {
+    display:grid;
+
+    color:green;
+    font-size: 1em;
+  }
+
+  h1 strong {
+    color:red;
+    font-size:var(--titel-font-size-desktop);
+  }
+
+  h2{
+    font-size: var(clamp(1.625rem, 0.8846rem + 2.8205vw, 3rem));
+  }
+
 
 
   

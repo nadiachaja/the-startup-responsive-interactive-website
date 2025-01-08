@@ -1,19 +1,19 @@
 body{
     /*colors*/
-    --background-color:F0F0F0;
-    --improvemnet-background-color-orange:FFD08A;
-    --error-background-color-red:FFDADA;
-    --good-background-color-green:BBFFD8;
-    --progress-circle-background-darkblue:0275FF;
-    --progress-circle-background-lightblue:CCE3FF;
-    --prgress-circle-background-darkorgange:FF9800;
-    --background-color-header:ffffff;
+    --background-color:#F0F0F0;
+    --improvemnet-background-color-orange:#FFD08A;
+    --error-background-color-red:#FFDADA;
+    --good-background-color-green:#BBFFD8;
+    --progress-circle-background-darkblue:#0275FF;
+    --progress-circle-background-lightblue:#CCE3FF;
+    --prgress-circle-background-darkorgange:#FF9800;
+    --background-color-header:#ffffff;
 
-    --font-color-general:5D666A;
-    --font-color-header:0275FF;
-    --font-color-dashboard:87929F;
-    --good-font-color-green:00883C;
-    --error-font-color-red:B50000;
+    --font-color-general:#5D666A;
+    --font-color-header:#0275FF;
+    --font-color-dashboard:#87929F;
+    --good-font-color-green:#00883C;
+    --error-font-color-red:#B50000;
 
 
     /*font-family*/
@@ -24,4 +24,20 @@ body{
     --font-bold:bold;
     --font-light:light;
     --font-regular:normal;
+    --titel-font-size-desktop:48px; /*h1*/
+    --titel-font-size-tablet:28px; /*h1*/
+    --titel-font-size-telefoon:20px; /*h1*/
+    --subtitel-font-size: clamp(1.625rem, 0.8846rem + 2.8205vw, 3rem); /*h2*/
+    --paragraph-small:16px; /*p*/
+    --paragraph-medium:clamp(1rem, 0.8125rem + 0.7143vw, 1.125rem); /*p*/
+    --paragraph-big:clamp(1rem, 0.65rem + 0.8vw, 1.25rem); /*p*/
+
+    /*border-radius*/
+    --border-radius-small:15px;
+    --border-radius-medium:20px;
+    
+    /*border*/
+    border: rgba(0, 0, 0, 0.126);
+
+    
 }

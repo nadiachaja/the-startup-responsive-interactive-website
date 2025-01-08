@@ -1,52 +1,119 @@
-
-
+body {
+  font-family: var(--font-family-general);
+}
 
 
 .visually-hidden {
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-  }
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
 
-  
-  div {
-	/* vierkant en rond	*/
-	width: 10em;
-	aspect-ratio:1;
-	border-radius:50%;
+div {
+  /* vierkant en rond	*/
+  width: 10em;
+  aspect-ratio: 1;
+  border-radius: 50%;
 
-    background-image:conic-gradient(
-		darkorange 71%,
-		orange 0
-    );
+  /* om de taartpunt te maken*/
+  background-image: conic-gradient(var(--color-bar, #666) calc(var(--percentage, 0) * 100%),
+      var(--color-track, #ccc) 0);
 
-    mask-image:radial-gradient(
+
+	/* om de cirkel in het midden doorzichtig te maken */
+	mask-image:radial-gradient(
 		closest-side,
 		transparent 4em,
-		green 0
-	)
-  }
+		red 0
+	);
 
-  h1 {
-    display:grid;
+  	/* bolletje in het midden van de div */
+	display:grid;
+	place-items:center;
+}
 
-    color:green;
-    font-size: 1em;
-  }
+div::before,
+div::after {
+	content:"";
+	display:block;
+	/* bolletje op elkaar in het midden van de div */
+	grid-area:1/1;
+	
+  /* vierkant en rond	*/
+	width:1em;
+	aspect-ratio:1;
+	border-radius:50%;
+	
+	/* kleur van de bar */
+	background-color:var(--color-bar, #333);
+}
 
-  h1 strong {
-    color:red;
-    font-size:var(--titel-font-size-desktop);
-  }
+/* bolletje boven */
+div::before {
+  /* omhoog */
+	transform:
+		translateY(-4.5em);
+}
 
-  h2{
-    font-size: var(clamp(1.625rem, 0.8846rem + 2.8205vw, 3rem));
-  }
+div::after {
+	/* draaien en dan in die richting omhoog */
+	transform:
+		rotate( calc(var(--percentage) * 1turn) )
+		translateY(-4.5em);
+}
+
+div:nth-of-type(1) {
+	--percentage:.57;
+	
+	--color-track:var(--progress-circle-background-lightblue);
+	--color-bar:var(--progress-circle-background-darkblue);
+}
+
+div:nth-of-type(2) {
+	--percentage:.57;
+	
+	--color-track:var(--progress-circle-background-lightorange);
+	--color-bar:var(--progress-circle-background-darkorange);
+}
+
+div:nth-of-type(3) {
+	--percentage:.100;
+	
+	--color-track:moccasin;
+	--color-bar:orange;
+}
+
+div:nth-of-type(4) {
+	--percentage:.100;
+	
+	--color-track:moccasin;
+	--color-bar:orange;
+}
 
 
 
-  
+h1 {
+  display: grid;
+
+  color: var(--font-color-dashboard);
+  font-size: var(--paragraph-small);
+}
+
+h1 strong {
+  color: var(--font-color-general);
+  font-size: var(--titel-font-size-desktop);
+}
+
+h2 {
+  font-size: var(clamp(1.625rem, 0.8846rem + 2.8205vw, 3rem));
+}
+
+
+
+
+
+

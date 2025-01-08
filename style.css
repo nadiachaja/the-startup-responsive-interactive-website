@@ -29,9 +29,35 @@ h2 {
 }
 
 
+/*skiplink*/
+.skip{
+  position: absolute;
+  background-color:var(--font-color-general);
+  color:var(--background-color-header);
+  padding: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  z-index: 100;
+  transform:translateY(-100%);
+  transition: transform 0.3s;
+}
 
+.skip:focus{
+  transform: translate(0%);
+}
 
+.logo-accessdash-img{
+  margin-top: .5em;
+  margin-left: .5em;
+}
 
+.nav-details{
+  margin-left: .5em;
+}
+
+.heading-text{
+  font-size: 18px;
+}
 
 
 
@@ -132,6 +158,21 @@ div:nth-of-type(4) {
 
 
 
+.phone-design-dashboard-heading{
+  display: block;
+}
+
+
+.desktop-design-dashboard-heading{
+  display: none;
+}
+
+
+
+
+
+
+
 
 
 
@@ -158,6 +199,17 @@ div:nth-of-type(4) {
     background-color: var(--background-color-header);
     grid-column: 1;
   }
+
+  .phone-design-dashboard-heading{
+    display: none;
+  }
+  
+  
+  .desktop-design-dashboard-heading{
+    display: block;
+  }
+
+
   
 }
 

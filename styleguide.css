@@ -30,8 +30,8 @@ body{
     --titel-font-size-telefoon:20px; /*h1*/
     --subtitel-font-size: clamp(1.625rem, 0.8846rem + 2.8205vw, 3rem); /*h2*/
     --paragraph-small:16px; /*p*/
-    --paragraph-medium:clamp(1rem, 0.8125rem + 0.7143vw, 1.125rem); /*p*/
-    --paragraph-big:clamp(1rem, 0.65rem + 0.8vw, 1.25rem); /*p*/
+    --paragraph-medium:18px; /*p*/
+    --paragraph-big:20px; /*p*/
 
     /*border-radius*/
     --border-radius-small:15px;
@@ -42,3 +42,10 @@ body{
 
     
 }
+
+/*h2*/
+/* --subtitel-font-size-desktop:28px; 
+--subtitel-font-size-tablet:22px; 
+--subtitel-font-size-telefoon:18px;  */
+
+

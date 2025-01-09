@@ -5,6 +5,7 @@ body {
 
 main{
   background-color: var(--background-color);
+  padding-bottom: .5em;
 }
 
 nav{
@@ -14,9 +15,10 @@ nav{
 
 h1 {
   display: grid;
-
   color: var(--font-color-dashboard);
   font-size: var(--paragraph-small);
+  margin-left: 1.5em;
+  padding-top: 1.5em;
 }
 
 h1 strong {
@@ -25,7 +27,27 @@ h1 strong {
 }
 
 h2 {
-  font-size: var(clamp(1.625rem, 0.8846rem + 2.8205vw, 3rem));
+  font-size: var(--subtitel-font-size-telefoon);
+  display: flex;
+  margin-left: 1em;
+}
+
+.heading-text{
+  font-size: 18px;
+}
+
+.link-site{
+  grid-column: 1;
+  display: flex;
+  margin: 0;
+  margin-left: 5em;
+}
+
+.update-site{
+  grid-column: 1;
+  grid-row: 3;
+  display: flex;
+  justify-self: center;
 }
 
 
@@ -46,6 +68,7 @@ h2 {
   transform: translate(0%);
 }
 
+/*logo accessdash*/
 .logo-accessdash-img{
   margin-top: .5em;
   margin-left: .5em;
@@ -55,10 +78,41 @@ h2 {
   margin-left: .5em;
 }
 
-.heading-text{
-  font-size: 18px;
+/*de verschillende website*/
+.cards{
+  background-color: var(--background-color-header);
+  border-radius: var(--border-radius-medium);
+  margin: 1.5em;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 35% 20% 40%;
+  height: 10em;
 }
 
+/*de cirkel*/
+div{
+  grid-row: 2;
+  grid-column: 2;
+  align-self: center;
+  justify-self: center;
+  margin-right: 2.5em;
+  margin-top: 1.2em;
+}
+
+.logo-cards{
+  margin-right: .5em;
+  margin-top: -.3em;
+}
+
+
+.phone-design-dashboard-heading{
+  display: block;
+}
+
+
+.desktop-design-dashboard-heading{
+  display: none;
+}
 
 
 
@@ -75,8 +129,8 @@ h2 {
 }
 
 div {
-  /* vierkant en rond	*/
-  width: 10em;
+  /* vierkant en rond */
+  width: 7em;
   aspect-ratio: 1;
   border-radius: 50%;
 
@@ -85,87 +139,89 @@ div {
       var(--color-track, #ccc) 0);
 
 
-	/* om de cirkel in het midden doorzichtig te maken */
-	mask-image:radial-gradient(
-		closest-side,
-		transparent 4em,
-		red 0
-	);
+  /* om de cirkel in het midden doorzichtig te maken */
+  mask-image:radial-gradient(
+    closest-side,
+    transparent 2.5em,
+    red 0
+  );
 
-  	/* bolletje in het midden van de div */
-	display:grid;
-	place-items:center;
+    /* bolletje in het midden van de div */
+  display:grid;
+  place-items:center;
 }
 
 div::before,
 div::after {
-	content:"";
-	display:block;
-	/* bolletje op elkaar in het midden van de div */
-	grid-area:1/1;
-	
-  /* vierkant en rond	*/
-	width:1em;
-	aspect-ratio:1;
-	border-radius:50%;
-	
-	/* kleur van de bar */
-	background-color:var(--color-bar, #333);
+  content:"";
+  display:block;
+  /* bolletje op elkaar in het midden van de div */
+  grid-area:1/1;
+  
+  /* vierkant en rond */
+  width:1em;
+  aspect-ratio:1;
+  border-radius:50%;
+  
+  /* kleur van de bar */
+  background-color:var(--color-bar, #333);
 }
 
 /* bolletje boven */
 div::before {
   /* omhoog */
-	transform:
-		translateY(-4.5em);
+  transform:
+    translateY(-3em);
 }
 
 div::after {
-	/* draaien en dan in die richting omhoog */
-	transform:
-		rotate( calc(var(--percentage) * 1turn) )
-		translateY(-4.5em);
+  /* draaien en dan in die richting omhoog */
+  transform:
+    rotate( calc(var(--percentage) * 1turn) )
+    translateY(-3em);
 }
 
 div:nth-of-type(1) {
-	--percentage:.57;
-	
-	--color-track:var(--progress-circle-background-lightblue);
-	--color-bar:var(--progress-circle-background-darkblue);
+  --percentage:.57;
+  
+  --color-track:var(--progress-circle-background-lightblue);
+  --color-bar:var(--progress-circle-background-darkblue);
 }
 
 div:nth-of-type(2) {
-	--percentage:.57;
-	
-	--color-track:var(--progress-circle-background-lightorange);
-	--color-bar:var(--progress-circle-background-darkorange);
+  --percentage:.57;
+  
+  --color-track:var(--progress-circle-background-lightorange);
+  --color-bar:var(--progress-circle-background-darkorange);
 }
 
 div:nth-of-type(3) {
-	--percentage:.100;
-	
-	--color-track:moccasin;
-	--color-bar:orange;
+  --percentage:.100;
+  
+  --color-track:moccasin;
+  --color-bar:orange;
 }
 
 div:nth-of-type(4) {
-	--percentage:.100;
-	
-	--color-track:moccasin;
-	--color-bar:orange;
+  --percentage:.100;
+  
+  --color-track:moccasin;
+  --color-bar:orange;
 }
 
 
 
 
-.phone-design-dashboard-heading{
-  display: block;
-}
 
 
-.desktop-design-dashboard-heading{
-  display: none;
-}
+
+
+
+
+
+
+
+
 
 
 

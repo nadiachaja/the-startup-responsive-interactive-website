@@ -26,9 +26,11 @@ body{
     --font-light:light;
     --font-regular:normal;
     --titel-font-size-desktop:48px; /*h1*/
-    --titel-font-size-tablet:28px; /*h1*/
-    --titel-font-size-telefoon:20px; /*h1*/
-    --subtitel-font-size: clamp(1.625rem, 0.8846rem + 2.8205vw, 3rem); /*h2*/
+    --titel-font-size-tablet:32px; /*h1*/
+    --titel-font-size-telefoon:28px; /*h1*/
+    --subtitel-font-size-desktop:28px; /*h2*/
+    --subtitel-font-size-tablet:26px; /*h2*/
+    --subtitel-font-size-telefoon:22px; /*h2*/
     --paragraph-small:16px; /*p*/
     --paragraph-medium:18px; /*p*/
     --paragraph-big:20px; /*p*/
@@ -43,9 +45,5 @@ body{
     
 }
 
-/*h2*/
-/* --subtitel-font-size-desktop:28px; 
---subtitel-font-size-tablet:22px; 
---subtitel-font-size-telefoon:18px;  */
 
 

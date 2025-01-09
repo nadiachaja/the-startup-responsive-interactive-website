@@ -155,9 +155,8 @@ a{
 
 .nav-phone-dashboard-nieuwekijk{
   display: flex;
-  /* justify-content: space-evenly; */
-  margin-left: 1.5em;
-  gap: 1em;
+  margin-left: .5em;
+  gap: 1.5em;
   grid-column: 1;
   grid-row: 3;
 }
@@ -181,7 +180,22 @@ ul{
   font-size: var(--paragraph-medium);
 }
 
+summary{
+  position: relative;
+}
 
+summary::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: url('./assets/arrow.svg') no-repeat;
+  background-size: cover;
+  transition: 0.3s;
+  background-size: contain;
+  left: 6.5em;
+  top: .5em;
+}
 
 
 

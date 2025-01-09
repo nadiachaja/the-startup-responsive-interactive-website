@@ -1,7 +1,7 @@
 body{
     /*colors*/
     --background-color:#F0F0F0;
-    --improvemnet-background-color-orange:#FFD08A;
+    --improvemnet-background-color-orange:#ffd08a3b;
     --error-background-color-red:#FFDADA;
     --good-background-color-green:#BBFFD8;
     --progress-circle-background-darkblue:#0275FF;
@@ -9,6 +9,7 @@ body{
     --progress-circle-background-darkorange:#FF9800;
     --progress-circle-background-lightorange:#FFE0B3;
     --background-color-header:#ffffff;
+
 
     --font-color-general:#5D666A;
     --font-color-header:#0275FF;
@@ -40,7 +41,7 @@ body{
     --border-radius-medium:20px;
     
     /*border*/
-    border: rgba(0, 0, 0, 0.126);
+    --border: 1.5px solid #FFD08A;
 
     
 }

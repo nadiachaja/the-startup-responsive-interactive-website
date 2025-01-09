@@ -30,26 +30,12 @@ h2 {
   font-size: var(--subtitel-font-size-telefoon);
   display: flex;
   margin-left: 1em;
+  color: var(--font-color-general);
 }
 
-.heading-text{
-  font-size: 18px;
+a{
+  text-decoration: none;
 }
-
-.link-site{
-  grid-column: 1;
-  display: flex;
-  margin: 0;
-  margin-left: 5em;
-}
-
-.update-site{
-  grid-column: 1;
-  grid-row: 3;
-  display: flex;
-  justify-self: center;
-}
-
 
 /*skiplink*/
 .skip{
@@ -77,6 +63,56 @@ h2 {
 .nav-details{
   margin-left: .5em;
 }
+
+.heading-text{
+  font-size: 18px;
+}
+
+.link-site{
+  grid-column: 1;
+  display: flex;
+  margin: 0;
+  margin-left: 5em;
+}
+
+.update-site{
+  grid-column: 1;
+  grid-row: 3;
+  display: flex;
+  justify-self: center;
+}
+
+.update-site.ontoegankelijk{
+  background-color: var(--error-background-color-red);
+  color: var(--error-font-color-red);
+  padding: .5em;
+  border-radius: var(--border-radius-medium) ;
+  align-self: center;
+}
+
+.update-site.toegankelijk{
+  background-color: var(--good-background-color-green);
+  color: var(--good-font-color-green);
+  padding: .5em;
+  border-radius: var(--border-radius-medium) ;
+  align-self: center;
+}
+
+.update-site.new-errors{
+  background-color: var(--improvemnet-background-color-orange);
+  color: var(--font-color-general);
+  padding: .5em;
+  border-radius: var(--border-radius-medium) ;
+  border: var(--border);
+  align-self: center;
+}
+
+.urgent{
+  width: 20px;
+  height: 20px;
+  margin-right: .5em;
+}
+
 
 /*de verschillende website*/
 .cards{

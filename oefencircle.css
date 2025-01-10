@@ -1,0 +1,299 @@
+body {
+    font-family: var(--font-family-general);
+    margin: 0;
+  }
+  
+  main{
+    background-color: var(--background-color);
+    padding-bottom: .5em;
+  }
+  
+  nav{
+    background-color: var(--background-color-header);
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto;
+    height: 100%;
+  }
+  
+  
+  h1 {
+    display: grid;
+    color: var(--font-color-dashboard);
+    font-size: var(--paragraph-small);
+    margin-left: 1.5em;
+    padding-top: 1.5em;
+  }
+  
+  h1 strong {
+    color: var(--font-color-general);
+    font-size: var(--titel-font-size-desktop);
+  }
+  
+  h2 {
+    font-size: var(--subtitel-font-size-telefoon);
+    display: flex;
+    margin-left: 1em;
+    color: var(--font-color-general);
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  
+  /*skiplink*/
+  .skip{
+    position: absolute;
+    background-color:var(--font-color-general);
+    color:var(--background-color-header);
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    z-index: 100;
+    transform:translateY(-100%);
+    transition: transform 0.3s;
+  }
+  
+  .skip:focus{
+    transform: translate(0%);
+  }
+  
+  /*logo accessdash*/
+  .logo-accessdash-img{
+    margin-top: .5em;
+    margin-left: .5em;
+  }
+  
+  .nav-details{
+    margin-left: .5em;
+    display: block;
+  }
+  
+  .heading-text{
+    font-size: 18px;
+  }
+  
+  .link-site{
+    grid-column: 1;
+    display: flex;
+    margin: 0;
+    margin-left: 5em;
+  }
+  
+  .update-site{
+    grid-column: 1;
+    grid-row: 3;
+    display: flex;
+    justify-self: center;
+  }
+  
+  .update-site.ontoegankelijk{
+    background-color: var(--error-background-color-red);
+    color: var(--error-font-color-red);
+    padding: .5em;
+    border-radius: var(--border-radius-medium) ;
+    align-self: center;
+  }
+  
+  .update-site.toegankelijk{
+    background-color: var(--good-background-color-green);
+    color: var(--good-font-color-green);
+    padding: .5em;
+    border-radius: var(--border-radius-medium) ;
+    align-self: center;
+  }
+  
+  .update-site.new-errors{
+    background-color: var(--improvemnet-background-color-orange);
+    color: var(--font-color-general);
+    padding: .5em;
+    border-radius: var(--border-radius-medium) ;
+    border: var(--border);
+    align-self: center;
+  }
+  
+  .urgent{
+    width: 20px;
+    height: 20px;
+    margin-right: .5em;
+  }
+  
+  
+  /*de verschillende website*/
+  .cards{
+    background-color: var(--background-color-header);
+    border-radius: var(--border-radius-medium);
+    margin: 1.5em;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 35% 20% 40%;
+    height: 10em;
+    cursor: pointer;
+  }
+  
+  /*de cirkel*/
+  /* div{
+    grid-row: 2;
+    grid-column: 2;
+    align-self: center;
+    justify-self: center;
+    margin-right: 2.5em;
+    margin-top: 1.2em;
+  } */
+  
+  .logo-cards{
+    margin-right: .5em;
+    margin-top: -.3em;
+  }
+  
+  
+  .phone-design-dashboard-heading{
+    display: block;
+  }
+  
+  
+  .desktop-design-dashboard-heading{
+    display: none;
+  }
+  
+  .nav-phone-dashboard-nieuwekijk{
+    display: flex;
+    margin-left: .5em;
+    gap: 1.5em;
+    grid-column: 1;
+    grid-row: 3;
+  }
+  
+  ul{
+    grid-column: 3;
+    grid-row: 1;
+    list-style-type: none;
+    cursor: pointer;
+  }
+  
+  .heading-text{
+    display: flex;
+    gap: .5em;
+    font-size: var(--paragraph-medium);
+    cursor: pointer;
+  }
+  
+  summary{
+    position: relative;
+    list-style: none; 
+  }
+  
+  summary::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: url('./assets/arrow.svg') no-repeat;
+    background-size: cover;
+    transition: 0.3s;
+    background-size: contain;
+    left: 6.5em;
+    top: .5em;
+  }
+  
+  
+  
+  
+  
+  .visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  div {
+      /* vierkant en rond	*/
+      width: 10em;
+      aspect-ratio:1;
+      border-radius:50%;
+      
+      /* om de taartpunt te maken*/
+      background-image:conic-gradient(
+          var(--color-bar, #666) calc(var(--percentage, 0) * 100%),
+          var(--color-track, #ccc) 0
+      );
+      
+      /* om de cirkel in het midden doorzichtig te maken */
+      mask-image:radial-gradient(
+          closest-side,
+          transparent 4em,
+          red 0
+      );
+      
+      /* bolletje in het midden van de div */
+      display:grid;
+      place-items:center;
+  }
+  
+  
+  
+  
+  
+  /**************************************/
+  /* de ronde bolletjes aan de uitenden */
+  /**************************************/
+  
+  div::before,
+  div::after {
+      content:"";
+      display:block;
+      /* bolletje op elkaar in het midden van de div */
+      grid-area:1/1;
+      
+    /* vierkant en rond	*/
+      width:1em;
+      aspect-ratio:1;
+      border-radius:50%;
+      
+      /* kleur van de bar */
+      background-color:var(--color-bar, #333);
+  }
+  
+  /* bolletje boven */
+  div::before {
+    /* omhoog */
+      transform:
+          translateY(-4.5em);
+  }
+  
+  /* bolletje aan het einde van de bar */
+  div::after {
+      /* draaien en dan in die richting omhoog */
+      transform:
+          rotate( calc(var(--percentage) * 1turn) )
+          translateY(-4.5em);
+  }
+  
+  
+  
+  
+  
+  /*******************************************/
+  /* het percentage en de kleuren per cirkel */
+  /*******************************************/
+  
+  div:nth-of-type(1) {
+      --percentage:.71;
+      
+      --color-track:moccasin;
+      --color-bar:orange;
+  }
+  
+
+
+  

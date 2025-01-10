@@ -200,7 +200,99 @@ summary::after {
 
 
 
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
 
+
+
+
+
+
+
+div {
+	/* vierkant en rond	*/
+	width: 10em;
+	aspect-ratio:1;
+	border-radius:50%;
+	
+	/* om de taartpunt te maken*/
+	background-image:conic-gradient(
+		var(--color-bar, #666) calc(var(--percentage, 0) * 100%),
+		var(--color-track, #ccc) 0
+	);
+	
+	/* om de cirkel in het midden doorzichtig te maken */
+	mask-image:radial-gradient(
+		closest-side,
+		transparent 4em,
+		red 0
+	);
+	
+	/* bolletje in het midden van de div */
+	display:grid;
+	place-items:center;
+}
+
+
+
+
+
+/**************************************/
+/* de ronde bolletjes aan de uitenden */
+/**************************************/
+
+div::before,
+div::after {
+	content:"";
+	display:block;
+	/* bolletje op elkaar in het midden van de div */
+	grid-area:1/1;
+	
+  /* vierkant en rond	*/
+	width:1em;
+	aspect-ratio:1;
+	border-radius:50%;
+	
+	/* kleur van de bar */
+	background-color:var(--color-bar, #333);
+}
+
+/* bolletje boven */
+div::before {
+  /* omhoog */
+	transform:
+		translateY(-4.5em);
+}
+
+/* bolletje aan het einde van de bar */
+div::after {
+	/* draaien en dan in die richting omhoog */
+	transform:
+		rotate( calc(var(--percentage) * 1turn) )
+		translateY(-4.5em);
+}
+
+
+
+
+
+/*******************************************/
+/* het percentage en de kleuren per cirkel */
+/*******************************************/
+
+div:nth-of-type(1) {
+	--percentage:.71;
+	
+	--color-track:moccasin;
+	--color-bar:orange;
+}
 
 
 

@@ -216,7 +216,7 @@ summary::after {
 
 
 
-div {
+circle {
 	/* vierkant en rond	*/
 	width: 10em;
 	aspect-ratio:1;
@@ -248,8 +248,8 @@ div {
 /* de ronde bolletjes aan de uitenden */
 /**************************************/
 
-div::before,
-div::after {
+circle::before,
+circle::after {
 	content:"";
 	display:block;
 	/* bolletje op elkaar in het midden van de div */
@@ -265,14 +265,14 @@ div::after {
 }
 
 /* bolletje boven */
-div::before {
+circle::before {
   /* omhoog */
 	transform:
 		translateY(-4.5em);
 }
 
 /* bolletje aan het einde van de bar */
-div::after {
+circle::after {
 	/* draaien en dan in die richting omhoog */
 	transform:
 		rotate( calc(var(--percentage) * 1turn) )
@@ -287,7 +287,7 @@ div::after {
 /* het percentage en de kleuren per cirkel */
 /*******************************************/
 
-div:nth-of-type(1) {
+circle:nth-of-type(1) {
 	--percentage:.71;
 	
 	--color-track:moccasin;

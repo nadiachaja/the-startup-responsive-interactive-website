@@ -79,6 +79,56 @@ a {
   font-size: 18px;
 }
 
+.nieuwekijk-nav-subtext{
+  display: grid;
+  margin-left: 1.5em;
+  font-family: var(--font-family-general);
+  color: var(--font-color-general);
+  grid-column: 3;
+  grid-row: 1;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+a.nieuwekijk-nav-subtext{
+  text-decoration: none;
+}
+
+.dashboard-nav-subtext{
+  display: grid;
+  margin-left: 1.5em;
+  font-family: var(--font-family-general);
+  color: var(--font-color-general);
+  grid-column: 3;
+  grid-row: 1;
+  list-style-type: none;
+  cursor: pointer;
+  
+}
+
+a.dashboard-nav-subtex{
+  text-decoration: none;
+}
+
+
+/*nav instellingen en account*/
+.extra-info-nav{
+  list-style-type: none;
+  cursor: pointer;
+  font-family: var(--font-family-general);
+  color: var(--font-color-general);
+}
+
+.extra-info-subtext-nav{
+  display: grid;
+  grid-column: 3;
+  grid-row: 1;
+  justify-content: end;
+  margin: .5em;
+  margin-bottom: 1em;
+}
+
+
 .link-site {
   grid-column: 1;
   display: flex;
@@ -189,8 +239,6 @@ summary::after {
 
 
 
-
-
 /*circle*/
 
 .visually-hidden {
@@ -284,46 +332,6 @@ summary::after {
 }
 
 
-.nieuwekijk-nav-subtext{
-  display: grid;
-  margin-left: 1.5em;
-  font-family: var(--font-family-general);
-  color: var(--font-color-general);
-  grid-column: 3;
-  grid-row: 1;
-  list-style-type: none;
-  cursor: pointer;
-}
-
-a.nieuwekijk-nav-subtext{
-  text-decoration: none;
-}
-
-.dashboard-nav-subtext{
-  display: grid;
-  margin-left: 1.5em;
-  font-family: var(--font-family-general);
-  color: var(--font-color-general);
-  grid-column: 3;
-  grid-row: 1;
-  list-style-type: none;
-  cursor: pointer;
-  
-}
-
-a.dashboard-nav-subtex{
-  text-decoration: none;
-}
-
-.extra-info-nav{
-  display: grid;
-  grid-column: 3;
-  grid-row: 1;
-  list-style-type: none;
-  cursor: pointer;
-  font-family: var(--font-family-general);
-  color: var(--font-color-general);
-}
 
 
 
@@ -422,11 +430,3 @@ a.dashboard-nav-subtex{
 
 }
 
-ul{
-  grid-column: 3;
-  grid-row: 1;
-  list-style-type: none;
-  cursor: pointer;
-  font-family: var(--font-family-general);
-  color: var(--font-color-general);
-}

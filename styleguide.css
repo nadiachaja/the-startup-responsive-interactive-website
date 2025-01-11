@@ -1,50 +1,84 @@
-body{
+body {
+
     /*colors*/
-    --background-color:#F0F0F0;
-    --improvemnet-background-color-orange:#ffd08a3b;
-    --error-background-color-red:#FFDADA;
-    --good-background-color-green:#BBFFD8;
-    --progress-circle-background-darkblue:#0275FF;
-    --progress-circle-background-lightblue:#CCE3FF;
-    --progress-circle-background-darkorange:#FF9800;
-    --progress-circle-background-lightorange:#FFE0B3;
-    --background-color-header:#ffffff;
 
+    /*background*/
+    --background-color: #F0F0F0;
+    --background-color-warning: #ffd08a3b;
+    --background-color-error: #FFDADA;
+    --background-color-good: #BBFFD8;
+    --background-color-nav: #ffffff;
 
-    --font-color-general:#5D666A;
-    --font-color-header:#0275FF;
-    --font-color-dashboard:#87929F;
-    --good-font-color-green:#00883C;
-    --error-font-color-red:#B50000;
+    /*progress circle*/
+    --progress-circle-background-info: #0275FF;
+    --progress-circle-background-info: #CCE3FF;
+    --progress-circle-background-warning: #FF9800;
+    --progress-circle-background-warning: #FFE0B3;
 
+    /*font*/
+    --font-color-general: #5D666A;
+    --font-color-secondary: #87929F;
+    --font-color-nav: #0275FF;
+    --font-color-good: #00883C;
+    --font-color-error: #B50000;
 
-    /*font-family*/
-    --font-family-general:"Outfit", serif;
+    /*-----------------------------------------------------*/
+
+    /*typografie*/
+    --font-family-general: "Outfit", serif;
+
+    /*-----------------------------------------------------*/
+
+    /*font-weight*/
+
+    /*weight*/
+    --font-weight-bold: bold;
+    --font-weight-light: light;
+    --font-weight-normal: normal;
+
+    /*-----------------------------------------------------*/
 
 
     /*font-size*/
-    --font-bold:bold;
-    --font-light:light;
-    --font-regular:normal;
-    --titel-font-size-desktop:48px; /*h1*/
-    --titel-font-size-tablet:32px; /*h1*/
-    --titel-font-size-telefoon:28px; /*h1*/
-    --subtitel-font-size-desktop:28px; /*h2*/
-    --subtitel-font-size-tablet:26px; /*h2*/
-    --subtitel-font-size-telefoon:22px; /*h2*/
-    --paragraph-small:16px; /*p*/
-    --paragraph-medium:18px; /*p*/
-    --paragraph-big:20px; /*p*/
+
+    /*h1*/
+    --titel-l: 46px;
+    --titel-m: 32px;
+    --titel-s: 28px;
+
+    /*h2*/
+    --subtitel-l: 32px;
+    --subtitel-m: 28px;
+    --subtitel-s: 24px;
+
+    /*h3*/
+    --primary-l: 24px;
+    --primary-m: 22px;
+    --primary-s: 20px;
+
+    /*p*/
+    --paragraph-l: 20px;
+    --paragraph-m: 18px;
+    --paragraph-s: 16px;
+
+    /*-----------------------------------------------------*/
+
+    --line-height-general: 135%;
+
+    /*-----------------------------------------------------*/
 
     /*border-radius*/
-    --border-radius-small:15px;
-    --border-radius-medium:20px;
-    
+    --border-radius-small: 15px;
+    --border-radius-medium: 20px;
+
+    /*-----------------------------------------------------*/
+
     /*border*/
     --border: 1.5px solid #FFD08A;
 
-    
+
+
+
+
+
 }
-
-
-

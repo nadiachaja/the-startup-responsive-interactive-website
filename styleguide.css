@@ -60,6 +60,8 @@ body {
     --paragraph-l: 20px;
     --paragraph-m: 18px;
     --paragraph-s: 16px;
+    --paragraph-xs: 14px;
+
 
     /*-----------------------------------------------------*/
 
@@ -75,6 +77,49 @@ body {
 
     /*border*/
     --border: 1.5px solid #FFD08A;
+
+    /*-----------------------------------------------------*/
+
+
+    /*buttons*/
+
+    /*button filter*/
+    --button-filter-background: #0275FF;
+    --button-filter-color: #CCE3FF;
+    --button-filter-border-radius: 10px;
+
+
+    /*button + pagina toevoegen filter*/
+    --button-pagina-toevoegen-filter-background: #0275FF;
+    --button-pagina-toevoegen-filter-color: #CCE3FF;
+    --button-pagina-toevoegen-filter-border-radius: 20px;
+
+
+    /*button + pagina toevoegen*/
+    --button-pagina-toevoegen-background: #ffffff;
+    --button-pagina-toevoegen-color: #5D666A;
+    --button-pagina-toevoegen-border-radius: 5px;
+
+
+    /*-----------------------------------------------------*/
+
+    /*zoekbalk*/
+
+    /*id*/
+    --search-bar-background: #ffffff;
+    --search-bar-height: 2em;
+    --search-width-s: 45%;
+    --search-width-m: 50%;
+    --search-width-l: 55%;
+
+
+    /*input>label*/
+    --search-background-repeat: no-repeat;
+    --search-background-position: .5em;
+    --search-background-size: 1em;
+
+
+
 
 
 

@@ -8,12 +8,17 @@ body {
     --background-color-error: #FFDADA;
     --background-color-good: #BBFFD8;
     --background-color-nav: #ffffff;
+    --background-color-cards:#ffffff;
 
     /*progress circle*/
-    --progress-circle-background-info: #0275FF;
-    --progress-circle-background-info: #CCE3FF;
-    --progress-circle-background-warning: #FF9800;
-    --progress-circle-background-warning: #FFE0B3;
+    --progress-circle-background-darkcolor-info: #0275FF;
+    --progress-circle-background-lightcolor-info: #CCE3FF;
+    --progress-circle-background-darkcolor-warning: #FF9800;
+    --progress-circle-background-lightcolor-warning: #FFE0B3;
+    --progress-circle-background-darkcolor-good:#00C858;
+    --progress-circle-background-lightcolor-good:#CCE3FF;
+
+  
 
     /*font*/
     --font-color-general: #5D666A;
@@ -49,12 +54,12 @@ body {
     /*h2*/
     --subtitel-l: 32px;
     --subtitel-m: 28px;
-    --subtitel-s: 24px;
+    --subtitel-s: 18px;
 
     /*h3*/
     --primary-l: 24px;
     --primary-m: 22px;
-    --primary-s: 20px;
+    --primary-s: 18px;
 
     /*p*/
     --paragraph-l: 20px;
@@ -70,13 +75,13 @@ body {
     /*-----------------------------------------------------*/
 
     /*border-radius*/
-    --border-radius-small: 15px;
-    --border-radius-medium: 20px;
+    --border-radius-s: 15px;
+    --border-radius-m: 20px;
 
     /*-----------------------------------------------------*/
 
     /*border*/
-    --border: 1.5px solid #FFD08A;
+    --border-warning: 1.5px solid #FFD08A;
 
     /*-----------------------------------------------------*/
 

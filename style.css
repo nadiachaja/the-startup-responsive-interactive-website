@@ -20,19 +20,19 @@ nav {
 
 h1 {
   display: grid;
-  color: var(--font-color-dashboard);
-  font-size: var(--paragraph-small);
+  color: var(--font-color-secondary);
+  font-size: var(--paragraph-s);
   margin-left: 1.5em;
   padding-top: 1.5em;
 }
 
 h1 strong {
   color: var(--font-color-general);
-  font-size: var(--titel-font-size-desktop);
+  font-size: var(--titel-s);
 }
 
 h2 {
-  font-size: var(--subtitel-font-size-telefoon);
+  font-size: var(--subtitel-s);
   display: flex;
   margin-left: 1em;
   color: var(--font-color-general);
@@ -51,7 +51,7 @@ a {
 .skip {
   position: absolute;
   background-color: var(--font-color-general);
-  color: var(--background-color-header);
+  color: var(--background-color-nav);
   padding: 10px;
   text-decoration: none;
   font-size: 18px;
@@ -75,9 +75,6 @@ a {
   display: block;
 }
 
-.heading-text {
-  font-size: 18px;
-}
 
 .nieuwekijk-nav-subtext{
   display: grid;
@@ -142,27 +139,27 @@ a.dashboard-nav-subtex{
 }
 
 .update-site.ontoegankelijk {
-  background-color: var(--error-background-color-red);
-  color: var(--error-font-color-red);
+  background-color: var(--background-color-error);
+  color: var(--font-color-error);
   padding: .5em;
-  border-radius: var(--border-radius-medium);
+  border-radius: var(--border-radius-m);
   align-self: center;
 }
 
 .update-site.toegankelijk {
-  background-color: var(--good-background-color-green);
-  color: var(--good-font-color-green);
+  background-color: var(--background-color-good);
+  color: var(--font-color-good);
   padding: .5em;
-  border-radius: var(--border-radius-medium);
+  border-radius: var(--border-radius-m);
   align-self: center;
 }
 
 .update-site.new-errors {
-  background-color: var(--improvemnet-background-color-orange);
+  background-color: var(--background-color-warning);
   color: var(--font-color-general);
   padding: .5em;
-  border-radius: var(--border-radius-medium);
-  border: var(--border);
+  border-radius: var(--border-radius-m);
+  border: var(--border-warning);
   align-self: center;
   margin-right: 1.5em;
 }
@@ -176,8 +173,8 @@ a.dashboard-nav-subtex{
 
 /*de verschillende website*/
 .cards {
-  background-color: var(--background-color-header);
-  border-radius: var(--border-radius-medium);
+  background-color: var(--background-color-cards);
+  border-radius: var(--border-radius-m);
   margin: 1.5em;
   display: grid;
   grid-template-columns: 70% 30%;
@@ -195,7 +192,6 @@ a.dashboard-nav-subtex{
   display: block;
 }
 
-
 .desktop-design-dashboard-heading {
   display: none;
 }
@@ -211,8 +207,9 @@ a.dashboard-nav-subtex{
 .heading-text {
   display: flex;
   gap: .5em;
-  font-size: var(--paragraph-medium);
+  font-size: var(--paragraph-m);
   cursor: pointer;
+  color: var(--font-color-nav);
 }
 
 summary {
@@ -311,22 +308,29 @@ summary::after {
 .circle:nth-of-type(1) {
   --percentage: .57;
 
-  --color-track: var(--progress-circle-background-lightblue);
-  --color-bar: var(--progress-circle-background-darkblue);
+  --color-track: var(--progress-circle-background-lightcolor-info);
+  --color-bar: var(--progress-circle-background-darkcolor-info);
 }
 
 .circle:nth-of-type(2) {
   --percentage: .57;
 
-  --color-track: var(--progress-circle-background-lightorange);
-  --color-bar: var(--progress-circle-background-darkorange);
+  --color-track: var(--progress-circle-background-lightcolor-warning);
+  --color-bar: var( --progress-circle-background-darkcolor-warning);
 }
 
 .circle:nth-of-type(3) {
   --percentage: .100;
 
-  --color-track: moccasin;
-  --color-bar: orange;
+  --color-track: var(--progress-circle-background-lightcolor-warning);
+  --color-bar: var( --progress-circle-background-darkcolor-warning);
+}
+
+.circle:nth-of-type(4) {
+  --percentage: .100;
+
+  --color-track: var(--progress-circle-background-lightcolor-good);
+  --color-bar: var(--progress-circle-background-darkcolor-good);
 }
 
 
@@ -346,10 +350,6 @@ summary::after {
 
   }
 
-  ul {
-    padding-left: 1.5em;
-  }
-
   .update-site.new-errors {
     margin: 0;
   }
@@ -362,7 +362,7 @@ summary::after {
   }
 
   h2 {
-    font-size: 18px;
+    font-size: var(--paragraph-m);
   }
 
   .circle::before {
@@ -371,17 +371,17 @@ summary::after {
 
   .circle::after {
     transform: rotate(calc(var(--percentage) * 1turn)) translateY(-2em);
-    /* Verplaats het bolletje naar boven */
   }
 }
 
 
 
-@media screen and (min-width:650px) {
+/* @media screen and (min-width:650px) {
 
   .logo-accessdash-img {
     display: flex;
     justify-self: center;
+    height: 23px;
   }
 
   body {
@@ -396,15 +396,9 @@ summary::after {
   }
 
   nav {
-    background-color: var(--background-color-header);
+    background-color: var(--background-color-nav);
     grid-column: 1;
     display: inline;
-  }
-
-  .logo-accessdash-img{
-    display: flex;
-    height: 23px;
-    justify-self: start;
   }
 
   h3{
@@ -420,11 +414,11 @@ summary::after {
     display: block;
   }
 
-}
+} */
 
 
 
-@media screen and (min-width:750px){
+/* @media screen and (min-width:750px){
 
   h3{
     display: flex;
@@ -445,5 +439,91 @@ summary::after {
     margin-left: 2em;
   }
 
-}
+} */
 
+
+
+
+
+
+
+
+@media screen and (min-width:700px) {
+
+  .logo-accessdash-img {
+    display: flex;
+    justify-self: center;
+    height: 20px;
+  }
+
+  body {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    margin: 0;
+  }
+
+  main {
+    background-color: var(--background-color);
+    grid-column: 2;
+  }
+
+  nav {
+    background-color: var(--background-color-nav);
+    grid-column: 1;
+    display: inline;
+    position: fixed;
+  }
+
+  h3{
+    color: var(--font-color-general);
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    gap: .2em;
+    margin: 0;
+    margin-top: 2em;
+    margin-bottom: .5em;
+    color: var(--font-color-general);
+  }
+
+  .extra-info-subtext-nav{
+    position: sticky;
+    bottom: 0;
+
+  }
+
+  .phone-design-dashboard-heading {
+    display: none;
+  }
+
+
+  .desktop-design-dashboard-heading {
+    display: block;
+  }
+
+  .cards{
+    width: 23em;
+  }
+
+
+  h3{
+    display: flex;
+    margin: 0;
+    margin-top: 3em;
+    margin-bottom: .5em;
+    margin-left: .5em;
+    gap: .5em;
+  }
+
+  .nav-phone-dashboard-nieuwekijk{
+    display: flex;
+    margin-top: 2em;
+    margin-left: .3em;
+  }
+
+  .dashboard-nav-subtext{
+    margin-left: 2em;
+  }
+
+
+}

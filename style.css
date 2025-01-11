@@ -160,15 +160,6 @@ a {
   grid-row: 3;
 }
 
-ul {
-  grid-column: 3;
-  grid-row: 1;
-  list-style-type: none;
-  cursor: pointer;
-  font-family: var(--font-family-general);
-  color: var(--font-color-general);
-}
-
 .heading-text {
   display: flex;
   gap: .5em;
@@ -298,6 +289,10 @@ summary::after {
   margin-left: 1.5em;
   font-family: var(--font-family-general);
   color: var(--font-color-general);
+  grid-column: 3;
+  grid-row: 1;
+  list-style-type: none;
+  cursor: pointer;
 }
 
 a.nieuwekijk-nav-subtext{
@@ -309,10 +304,25 @@ a.nieuwekijk-nav-subtext{
   margin-left: 1.5em;
   font-family: var(--font-family-general);
   color: var(--font-color-general);
+  grid-column: 3;
+  grid-row: 1;
+  list-style-type: none;
+  cursor: pointer;
+  
 }
 
 a.dashboard-nav-subtex{
   text-decoration: none;
+}
+
+.extra-info-nav{
+  display: grid;
+  grid-column: 3;
+  grid-row: 1;
+  list-style-type: none;
+  cursor: pointer;
+  font-family: var(--font-family-general);
+  color: var(--font-color-general);
 }
 
 
@@ -410,4 +420,13 @@ a.dashboard-nav-subtex{
 
 @media screen and (min-width:750px){
 
+}
+
+ul{
+  grid-column: 3;
+  grid-row: 1;
+  list-style-type: none;
+  cursor: pointer;
+  font-family: var(--font-family-general);
+  color: var(--font-color-general);
 }

@@ -293,6 +293,27 @@ summary::after {
 }
 
 
+.nieuwekijk-nav-subtext{
+  display: grid;
+  margin-left: 1.5em;
+  font-family: var(--font-family-general);
+  color: var(--font-color-general);
+}
+
+a.nieuwekijk-nav-subtext{
+  text-decoration: none;
+}
+
+.dashboard-nav-subtext{
+  display: grid;
+  margin-left: 1.5em;
+  font-family: var(--font-family-general);
+  color: var(--font-color-general);
+}
+
+a.dashboard-nav-subtex{
+  text-decoration: none;
+}
 
 
 

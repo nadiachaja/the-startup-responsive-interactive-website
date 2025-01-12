@@ -10,11 +10,14 @@ main {
 }
 
 nav {
-  background-color: var(--background-color-header);
+  background-color: var(--background-color-nav);
   display: grid;
   grid-template-columns: 33% 33% 33%;
   grid-template-rows: auto;
   height: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 

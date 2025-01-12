@@ -177,6 +177,7 @@ a.dashboard-nav-subtex{
   grid-template-rows: 35% 20% 40%;
   height: 10em;
   cursor: pointer;
+  filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.082));
 }
 
 .logo-cards {
@@ -339,6 +340,10 @@ summary::after {
   .update-site.new-errors {
     padding: .3em;
   }
+
+  .cards{
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.082));
+  }
 }
 
 @media screen and (max-width:375px) {
@@ -349,7 +354,6 @@ summary::after {
     mask-image: radial-gradient(closest-side,
         transparent 1.5em,
         red 0);
-
   }
 
   .update-site.new-errors {
@@ -367,6 +371,10 @@ summary::after {
     font-size: var(--paragraph-m);
   }
 
+  .cards{
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.082));
+  }
+
   .circle::before {
     transform: translateY(-2em);
   }
@@ -375,6 +383,8 @@ summary::after {
     transform: rotate(calc(var(--percentage) * 1turn)) translateY(-2em);
   }
 }
+
+
 
 @media screen and (min-width:450px){
   .cards{
@@ -410,7 +420,7 @@ summary::after {
   .logo-accessdash-img {
     display: flex;
     justify-self: center;
-    height: 20px;
+    height: 25px;
   }
 
   body {
@@ -439,9 +449,13 @@ summary::after {
     font-size: var(--paragraph-m);
   }
 
+  h2{
+    font-size: var(--subtitel-m);
+  }
+
   h3{
     color: var(--font-color-nav);
-    font-size: 18px;
+    font-size: var(--primary-m);
     display: flex;
     margin: 0;
     margin-top: 3em;
@@ -451,16 +465,23 @@ summary::after {
     justify-content: center;    
   }
 
+  .heading-text{
+    font-size: var(--primary-m);
+    margin-left: .5em;
+  }
+
+  summary::after{
+    left: 6em;
+  }
+
   .extra-info-subtext-nav{
     position: sticky;
     bottom: 0;
-
   }
 
   .phone-design-dashboard-heading {
     display: none;
   }
-
 
   .desktop-design-dashboard-heading {
     display: block;
@@ -468,6 +489,10 @@ summary::after {
 
   .cards{
     width: 23em;
+  }
+
+  .link-site{
+    margin-left: 4.5em;
   }
 
   .nav-phone-dashboard-nieuwekijk{
@@ -478,6 +503,12 @@ summary::after {
 
   .dashboard-nav-subtext{
     margin-left: 2em;
+  }
+}
+
+@media screen and (min-width:900px){
+  .logo-accessdash-img {
+    height: 30px;
   }
 }
 

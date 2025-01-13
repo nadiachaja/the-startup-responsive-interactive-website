@@ -3,44 +3,6 @@ body {
   margin: 0;
 }
 
-main {
-  background-color: var(--background-color);
-  padding-bottom: .5em;
-  min-height: 100vh;
-}
-
-nav {
-  background-color: var(--background-color-nav);
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-  grid-template-rows: auto;
-  height: 100%;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-
-h1 {
-  display: grid;
-  color: var(--font-color-secondary);
-  font-size: var(--paragraph-s);
-  margin-left: 1.5em;
-  padding-top: 1.5em;
-}
-
-h1 strong {
-  color: var(--font-color-general);
-  font-size: var(--titel-s);
-}
-
-h2 {
-  font-size: var(--subtitel-s);
-  display: flex;
-  margin-left: 1em;
-  color: var(--font-color-general);
-}
-
 p {
   font-family: var(--font-family-general);
   color: var(--font-color-general);
@@ -67,125 +29,18 @@ a {
   transform: translate(0%);
 }
 
-/*logo accessdash*/
-.logo-accessdash-img {
-  margin-top: .5em;
-  margin-left: .5em;
-}
 
-.nav-details {
-  margin-left: .5em;
-  display: block;
-}
+/*NAV*/
 
-.nieuwekijk-nav-subtext{
+nav {
+  background-color: var(--background-color-nav);
   display: grid;
-  margin-left: 1.5em;
-  font-family: var(--font-family-general);
-  color: var(--font-color-general);
-  grid-column: 3;
-  grid-row: 1;
-  list-style-type: none;
-  cursor: pointer;
-}
-
-a.nieuwekijk-nav-subtext{
-  text-decoration: none;
-}
-
-.dashboard-nav-subtext{
-  display: grid;
-  margin-left: 1.5em;
-  font-family: var(--font-family-general);
-  color: var(--font-color-general);
-  list-style-type: none;
-  cursor: pointer;
-}
-
-a.dashboard-nav-subtex{
-  text-decoration: none;
-}
-
-/*nav instellingen en account*/
-.extra-info-nav{
-  list-style-type: none;
-  cursor: pointer;
-  font-family: var(--font-family-general);
-  color: var(--font-color-general);
-}
-
-.extra-info-subtext-nav{
-  display: grid;
-  grid-column: 3;
-  grid-row: 1;
-  justify-content: end;
-  margin: .5em;
-  margin-bottom: 1em;
-}
-
-.link-site {
-  grid-column: 1;
-  display: flex;
-  margin: 0;
-  margin-left: 4em;
-}
-
-.update-site {
-  grid-column: 1;
-  grid-row: 3;
-  display: flex;
-  justify-self: center;
-}
-
-.update-site.ontoegankelijk {
-  background-color: var(--background-color-error);
-  color: var(--font-color-error);
-  padding: .5em;
-  border-radius: var(--border-radius-m);
-  align-self: center;
-}
-
-.update-site.toegankelijk {
-  background-color: var(--background-color-good);
-  color: var(--font-color-good);
-  padding: .5em;
-  border-radius: var(--border-radius-m);
-  align-self: center;
-}
-
-.update-site.new-errors {
-  background-color: var(--background-color-warning);
-  color: var(--font-color-general);
-  padding: .5em;
-  border-radius: var(--border-radius-m);
-  border: var(--border-warning);
-  align-self: center;
-  margin-right: 1.5em;
-}
-
-.urgent {
-  width: 20px;
-  height: 20px;
-  margin-right: .5em;
-}
-
-
-/*de verschillende website*/
-.cards {
-  background-color: var(--background-color-cards);
-  border-radius: var(--border-radius-m);
-  margin: 1.5em;
-  display: grid;
-  grid-template-columns: 70% 30%;
-  grid-template-rows: 35% 20% 40%;
-  height: 10em;
-  cursor: pointer;
-  filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.082));
-}
-
-.logo-cards {
-  margin-right: .5em;
-  margin-top: -.3em;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: auto;
+  height: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .phone-design-dashboard-heading {
@@ -232,6 +87,153 @@ summary::after {
   top: .5em;
 }
 
+/*logo accessdash*/
+.logo-accessdash-img {
+  margin-top: .5em;
+  margin-left: .5em;
+}
+
+.nav-details {
+  margin-left: .5em;
+  display: block;
+}
+
+.nieuwekijk-nav-subtext{
+  display: grid;
+  margin-left: 1.5em;
+  font-family: var(--font-family-general);
+  color: var(--font-color-general);
+  grid-column: 3;
+  grid-row: 1;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+a.nieuwekijk-nav-subtext{
+  text-decoration: none;
+}
+
+.dashboard-nav-subtext{
+  display: grid;
+  margin-left: 1.5em;
+  font-family: var(--font-family-general);
+  color: var(--font-color-general);
+  list-style-type: none;
+  cursor: pointer;
+}
+
+a.dashboard-nav-subtex{
+  text-decoration: none;
+}
+
+.extra-info-nav{
+  list-style-type: none;
+  cursor: pointer;
+  font-family: var(--font-family-general);
+  color: var(--font-color-general);
+}
+
+.extra-info-subtext-nav{
+  display: grid;
+  grid-column: 3;
+  grid-row: 1;
+  justify-content: end;
+  margin: .5em;
+  margin-bottom: 1em;
+}
+
+.link-site {
+  grid-column: 1;
+  display: flex;
+  margin: 0;
+  margin-left: 4em;
+}
+
+.update-site {
+  grid-column: 1;
+  grid-row: 3;
+  display: flex;
+  justify-self: center;
+}
+
+
+/*MAIN*/
+
+main {
+  background-color: var(--background-color);
+  padding-bottom: .5em;
+  min-height: 100vh;
+}
+
+h1 {
+  display: grid;
+  color: var(--font-color-secondary);
+  font-size: var(--paragraph-s);
+  margin-left: 1.5em;
+  padding-top: 1.5em;
+}
+
+h1 strong {
+  color: var(--font-color-general);
+  font-size: var(--titel-s);
+}
+
+h2 {
+  font-size: var(--subtitel-s);
+  display: flex;
+  margin-left: 1em;
+  color: var(--font-color-general);
+}
+
+/*de verschillende website*/
+.cards {
+  background-color: var(--background-color-cards);
+  border-radius: var(--border-radius-m);
+  margin: 1.5em;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 35% 20% 40%;
+  height: 10em;
+  cursor: pointer;
+  filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.082));
+}
+
+.logo-cards {
+  margin-right: .5em;
+  margin-top: -.3em;
+}
+
+.update-site.ontoegankelijk {
+  background-color: var(--background-color-error);
+  color: var(--font-color-error);
+  padding: .5em;
+  border-radius: var(--border-radius-m);
+  align-self: center;
+}
+
+.update-site.toegankelijk {
+  background-color: var(--background-color-good);
+  color: var(--font-color-good);
+  padding: .5em;
+  border-radius: var(--border-radius-m);
+  align-self: center;
+}
+
+.update-site.new-errors {
+  background-color: var(--background-color-warning);
+  color: var(--font-color-general);
+  padding: .5em;
+  border-radius: var(--border-radius-m);
+  border: var(--border-warning);
+  align-self: center;
+  margin-right: 1.5em;
+}
+
+.urgent {
+  width: 20px;
+  height: 20px;
+  margin-right: .5em;
+}
 
 
 /*circle*/

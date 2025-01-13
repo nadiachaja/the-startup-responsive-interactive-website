@@ -70,6 +70,7 @@ body {
 
     /*-----------------------------------------------------*/
 
+    /*bij tekst*/
     --line-height-general: 135%;
 
     /*-----------------------------------------------------*/
@@ -122,13 +123,5 @@ body {
     --search-background-repeat: no-repeat;
     --search-background-position: .5em;
     --search-background-size: 1em;
-
-
-
-
-
-
-
-
 
 }

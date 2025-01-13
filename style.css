@@ -438,13 +438,13 @@ h2 {
 
   .logo-accessdash-img {
     display: flex;
-    justify-self: center;
-    height: 25px;
+    margin-right: .5em;
+    height: 30px;
   }
 
   body {
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 25% 75%;
     margin: 0;
   }
 
@@ -487,7 +487,7 @@ h2 {
     font-size: var(--primary-m);
     display: flex;
     margin: 0;
-    margin-top: 3em;
+    margin-top: 1.5em;
     margin-bottom: .5em;
     gap: .5em;
    margin-left: .5em;
@@ -539,8 +539,14 @@ h2 {
 }
 
 @media screen and (min-width:900px) {
+  body{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    margin: 0;
+  }
+
   .logo-accessdash-img {
-    height: 30px;
+    height: 35px;
   }
 }
 

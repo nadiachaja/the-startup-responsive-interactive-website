@@ -299,12 +299,6 @@ h2 {
       var(--color-track, #ccc) 0
     );
 
-
-  /* om de cirkel in het midden doorzichtig te maken */
-  /* mask-image: radial-gradient(closest-side,
-      transparent 2.5em,
-      red 0); */
-
   /* bolletje in het midden van de div */
   display: grid;
   place-items: center;

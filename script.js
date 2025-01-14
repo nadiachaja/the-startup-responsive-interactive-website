@@ -1,24 +1,24 @@
-//alle articles opzoeken 
-//alle articles event toevoegen 
-//functie oproepen 
-//in de functie de a opzoeken 
-//de href uit de a opzoeken 
-//naar de url gaan 
 
+//de a over het article (dat je overal op de article kan klikken om naar een andere pagina te gaan)
 
-const cards = document.querySelectorAll("article")
+const cards = document.querySelectorAll("article") //alle articles opzoeken 
 
 cards.forEach(card => {
-    card.addEventListener("click", toDetailInfo);
+    card.addEventListener("click", toDetailInfo); //alle articles event toevoegen 
 });
 
-function toDetailInfo(event){
+function toDetailInfo(event){  //functie oproepen 
     
    const card = event.currentTarget;
 
-   const link = card.querySelector("a");
-   const linkName = link.href;
+   const link = card.querySelector("a"); //in de functie de a opzoeken 
+   const linkName = link.href; //de href uit de a opzoeken 
    
-   window.location.href = linkName;
-  
+   window.location.href = linkName; //naar de url gaan 
 }
+
+
+
+
+
+

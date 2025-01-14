@@ -73,6 +73,7 @@ nav {
   display: flex;
   gap: .5em;
   font-size: var(--paragraph-m);
+  font-weight: var(--font-weight-bold);
   cursor: pointer;
   color: var(--font-color-nav);
   padding-top: 15px;
@@ -83,6 +84,7 @@ summary {
   list-style: none;
   font-family: var(--font-family-general);
   color: var(--font-color-general);
+  font-weight: var(--font-weight-bold);
 }
 
 summary::after {
@@ -145,6 +147,7 @@ a.dashboard-nav-subtex {
   font-family: var(--font-family-general);
   color: var(--font-color-general);
   line-height: var(--line-height-general);
+  font-weight: var(--font-weight-bold);
   padding: .1em;
 
 }
@@ -203,6 +206,7 @@ h2 {
   display: flex;
   margin-left: 1em;
   color: var(--font-color-general);
+  font-weight: var(--font-weight-bold);
 }
 
 /*de verschillende website*/
@@ -369,6 +373,22 @@ h2 {
   .cards {
     filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.082));
   }
+
+  summary{
+    font-weight: var(--font-weight-bold);
+  }
+
+  .heading-text{
+    font-weight: var(--font-weight-bold);
+  }
+
+  h2{
+    font-weight: var(--font-weight-bold);
+  }
+
+  .extra-info-nav{
+    font-weight: var(--font-weight-bold);
+  }
 }
 
 @media screen and (max-width:375px) {
@@ -385,6 +405,14 @@ h2 {
     margin: 0;
   }
 
+  summary{
+    font-weight: var(--font-weight-bold);
+  }
+
+  .heading-text{
+    font-weight: var(--font-weight-bold);
+  }
+
   .link-site {
     grid-column: 1;
     display: flex;
@@ -392,8 +420,13 @@ h2 {
     margin-left: 4em;
   }
 
+  .extra-info-nav{
+    font-weight: var(--font-weight-bold);
+  }
+
   h2 {
     font-size: var(--paragraph-m);
+    font-weight: var(--font-weight-bold);
   }
 
   .cards {
@@ -491,12 +524,13 @@ h2 {
   h3 {
     color: var(--font-color-nav);
     font-size: var(--primary-m);
+    font-weight: var(--font-weight-bold);
     display: flex;
     margin: 0;
     margin-top: 1.5em;
     margin-bottom: .5em;
     gap: .5em;
-   margin-left: .5em;
+    margin-left: .5em;
   }
 
   .heading-text {

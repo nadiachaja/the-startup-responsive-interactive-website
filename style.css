@@ -110,6 +110,8 @@ summary::after {
 .nieuwekijk-nav-subtext {
   display: grid;
   margin-left: 1.5em;
+  padding: .1em;
+  line-height: var(--line-height-general);
   font-family: var(--font-family-general);
   color: var(--font-color-general);
   grid-column: 3;
@@ -125,6 +127,8 @@ a.nieuwekijk-nav-subtext {
 .dashboard-nav-subtext {
   display: grid;
   margin-left: 1.5em;
+  padding: .1em;
+  line-height: var(--line-height-general);
   font-family: var(--font-family-general);
   color: var(--font-color-general);
   list-style-type: none;
@@ -140,6 +144,8 @@ a.dashboard-nav-subtex {
   cursor: pointer;
   font-family: var(--font-family-general);
   color: var(--font-color-general);
+  line-height: var(--line-height-general);
+  padding: .1em;
 
 }
 

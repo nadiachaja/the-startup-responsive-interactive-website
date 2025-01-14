@@ -288,14 +288,22 @@ h2 {
   border-radius: 50%;
 
   /* om de taartpunt te maken*/
-  background-image: conic-gradient(var(--color-bar, #666) calc(var(--percentage, 0) * 100%),
-      var(--color-track, #ccc) 0);
+  background-image: 
+    radial-gradient(
+      white 2.5em,
+      transparent 0
+    ),
+    conic-gradient(
+      var(--color-bar, #666) 
+      calc(var(--percentage, 0) * 1%),
+      var(--color-track, #ccc) 0
+    );
 
 
   /* om de cirkel in het midden doorzichtig te maken */
-  mask-image: radial-gradient(closest-side,
+  /* mask-image: radial-gradient(closest-side,
       transparent 2.5em,
-      red 0);
+      red 0); */
 
   /* bolletje in het midden van de div */
   display: grid;
@@ -328,38 +336,46 @@ h2 {
 .circle::after {
   /* draaien en dan in die richting omhoog */
   transform:
-    rotate(calc(var(--percentage) * 1turn)) translateY(-3em);
+    rotate(calc(var(--percentage) * .01turn)) translateY(-3em);
 }
 
-.circle:nth-of-type(1) {
-  --percentage: .57;
+.circle-nfl {
+  --percentage: 57;
 
   --color-track: var(--progress-circle-background-lightcolor-info);
   --color-bar: var(--progress-circle-background-darkcolor-info);
 }
 
-.circle:nth-of-type(2) {
-  --percentage: .57;
+.circle-sc {
+  --percentage: 57;
 
   --color-track: var(--progress-circle-background-lightcolor-warning);
   --color-bar: var(--progress-circle-background-darkcolor-warning);
 }
 
-.circle:nth-of-type(3) {
-  --percentage: .100;
+.circle-nk{
+  --percentage: 100;
 
   --color-track: var(--progress-circle-background-lightcolor-warning);
   --color-bar: var(--progress-circle-background-darkcolor-warning);
 }
 
-.circle:nth-of-type(4) {
-  --percentage: .100;
+.circle-bn {
+  --percentage: 100;
 
   --color-track: var(--progress-circle-background-lightcolor-good);
   --color-bar: var(--progress-circle-background-darkcolor-good);
 }
 
+.circle span {
+  grid-area: 1/1;
+  font-family: var(--font-family-general);
+}
 
+.circle span::after {
+  content: counter(val) "%";
+  counter-reset: val var(--percentage);
+}
 
 
 /*media queries*/
@@ -389,6 +405,17 @@ h2 {
   .extra-info-nav{
     font-weight: var(--font-weight-bold);
   }
+  
+  .circle span {
+    grid-area: 1/1;
+    font-family: var(--font-family-general);
+    
+  }
+  
+  .circle span::after {
+    content: counter(val) "%";
+    counter-reset: val var(--percentage);
+  }
 }
 
 @media screen and (max-width:375px) {
@@ -396,9 +423,28 @@ h2 {
     width: 5em;
     margin-left: 1.5em;
 
-    mask-image: radial-gradient(closest-side,
-        transparent 1.5em,
-        red 0);
+    background-image: 
+    radial-gradient(
+      white 1.5em,
+      transparent 0
+    ),
+    conic-gradient(
+      var(--color-bar, #666) 
+      calc(var(--percentage, 0) * 1%),
+      var(--color-track, #ccc) 0
+    );
+  }
+
+  .circle::before {
+    transform: translateY(-2em);
+  }
+
+  .circle::after {
+    transform: rotate(calc(var(--percentage) * .01turn)) translateY(-2em);
+  }
+
+  .circle span::after{
+    font-size: var(--paragraph-xs);
   }
 
   .update-site.new-errors {
@@ -433,13 +479,6 @@ h2 {
     filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.082));
   }
 
-  .circle::before {
-    transform: translateY(-2em);
-  }
-
-  .circle::after {
-    transform: rotate(calc(var(--percentage) * 1turn)) translateY(-2em);
-  }
 }
 
 

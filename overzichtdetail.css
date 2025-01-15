@@ -204,11 +204,116 @@ main {
   
   h2 {
     font-size: var(--subtitel-s);
-    display: flex;
-    margin-left: 1em;
     color: var(--font-color-general);
     font-weight: var(--font-weight-bold);
+    margin-left: 1.5em;
   }
+
+  h4{
+    font-size: var(--paragraph-m);
+  }
+
+  .titel-text{
+    margin-left: 1.5em;
+    margin-bottom: 1em;
+  }
+
+  .page-tg{
+    background-color: var(--background-color-cards);
+    border-radius: var(--border-radius-m);
+    margin: 1.5em;
+    display: grid;
+    grid-template-columns: 40% 60%;
+  }
+
+  .page-as{
+    background-color: var(--background-color-cards);
+    border-radius: var(--border-radius-m);
+    margin: 1.5em;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 15% 25% 20% 20% 20%;
+  }
+
+  .datum-scan{
+    grid-column: 2;
+    grid-row: 1;
+    display: grid;
+    justify-content: end;
+    margin-right: 1.5em;
+  }
+
+  .circle.circle-as{
+    margin-left: 1em;
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .disclaimer{
+    grid-column: 1 / span2;
+    margin: 1.5em;
+    font-size: var(--paragraph-xs);
+  }
+
+  .attention{
+    grid-column: 1;
+    grid-row: 4;
+    margin: 0;
+    margin-left: 1.5em;
+    margin-top: .5em;
+    font-weight: var(--font-weight-bold);
+  }
+
+  .at-required{
+    grid-column: 1 / span2;
+    grid-row:  4 / span2;
+    column-width: 120px;
+  }
+
+  .update-site.new-errors {
+    background-color: var(--background-color-warning);
+    color: var(--font-color-general);
+    padding: .5em;
+    border-radius: var(--border-radius-m);
+    border: var(--border-warning);
+    align-self: center;
+    margin-right: 1.5em;
+    grid-column: 1 / span2;
+    grid-row: 2;
+    gap:.5em;
+    display: flex;
+    justify-self: end;
+  }
+
+  li{
+    list-style-type: none;
+  }
+
+  /* li::before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: url('./assets/check.svg') no-repeat;
+    background-size: cover;
+    transition: 0.3s;
+    background-size: contain;
+  }
+   */
+
+  .pages{
+    background-color: var(--background-color-cards);
+    border-radius: var(--border-radius-m);
+  }
+
+  .circle.circle-tg{
+    grid-column: 1;
+    margin-left: 1em;
+  }
+
+
+
+
+
 
 
 
@@ -230,14 +335,14 @@ main {
     width: 1px;
   }
   
-  .circle {
+  /* .circle {
     grid-row: 2;
     grid-column: 2;
     align-self: center;
     justify-self: center;
     margin-right: 2.5em;
     margin-top: 1.2em;
-  }
+  } */
   
   .circle {
     /* vierkant en rond */

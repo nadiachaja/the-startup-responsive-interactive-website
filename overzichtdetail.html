@@ -7,6 +7,11 @@
     <title>Dashboard Overzicht</title>
     <link rel="stylesheet" href="overzichtdetail.css">
     <link rel="stylesheet" href="styleguide.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Mate+SC&family=Outfit&family=Poppins&family=Special+Elite&display=swap"
+        rel="stylesheet">
+    
+    <link rel="icon" href="./assets/logopoppetje.svg" type="image/x-icon"/>
 </head>
 
 <body>
@@ -75,25 +80,33 @@
     <main id="main">
         <h1>Dashboard <strong>Nieuwekijk</strong></h1>
 
-        <article>
-            <h2>Toegankelijk</h2>
+        <article class="page-tg">
+            <h2 class="titel-test">Toegankelijk</h2>
 
             <meter max="100" value="57" class="visually-hidden">57%</meter>
 
             <div class="circle circle-tg" aria-hidden="true"><span></span></div>
 
-            <img class="check-a" src="./assets/check.svg" alt="check">
-            <p>Niveau A</p>
+            <div class="checks">
+                <p>
+                    <img class="check-a" src="./assets/check.svg" alt="check">
+                    Niveau A
+                </p>
 
-            <img class="check-aa" src="./assets/check.svg" alt="check">
-            <p>Niveau AA</p>
+                <p>
+                    <img class="check-a" src="./assets/check.svg" alt="check">
+                    Niveau AA
+                </p>
 
-            <img class="check-aaa" src="./assets/check.svg" alt="check">
-            <p>Niveau AAA</p>
+                <p>
+                    <img class="check-a" src="./assets/check.svg" alt="check">
+                    Niveau AAA
+                </p>
+            </div>
         </article>
 
-        <article>
-            <h2>Automatische scan</h2>
+        <article class="page-as">
+            <h2 class="titel-test">Automatische scan</h2>
 
             <meter max="100" value="57" class="visually-hidden">57%</meter>
 
@@ -104,22 +117,24 @@
                 nieuwe fouten ontdekt
             </p>
 
-            <p class="disclaimer">*Dit is een schatting gegenereerd door een automatische scan. Test altijd handmatig voor een volledig
+            <p class="disclaimer">*Dit is een schatting gegenereerd door een automatische scan. Test altijd handmatig
+                voor een volledig
                 beeld.</p>
 
+                <div class="at-required">
             <p class="attention">Aandacht vereist</p>
-
             <ul>
-                <li><img class="arrowright" src="./assets/arrowright.svg" alt="">/over-ons</li>
-                <li><img class="arrowright" src="./assets/arrowright.svg" alt="">home</li>
-                <li><img class="arrowright" src="./assets/arrowright.svg" alt="">/contact</li>
-                <li><img class="arrowright" src="./assets/arrowright.svg" alt="">/over-ons</li>
-                <li><img class="arrowright" src="./assets/arrowright.svg" alt="">home</li>
-                <li><img class="arrowright" src="./assets/arrowright.svg" alt="">/contact</li>
-                <li><img class="arrowright" src="./assets/arrowright.svg" alt="">/over-ons</li>
-                <li><img class="arrowright" src="./assets/arrowright.svg" alt="">home</li>
-                <li><img class="arrowright" src="./assets/arrowright.svg" alt="">/contact</li>
+                <li>/over-ons</li>
+                <li>home</li>
+                <li>contact</li>
+                <li>/over-ons</li>
+                <li>home</li>
+                <li>/contact</li>
+                <li>/over-ons</li>
+                <li>home</li>
+                <li>contact</li>
             </ul>
+        </div>
 
             <p class="datum-scan"><strong>Laatste scan</strong>16/01/2025</p>
         </article>
@@ -140,22 +155,22 @@
 
         <button>+ pagina toevoegen</button>
 
-        <article class="pages">
-            <h2>over-ons</h2>
-
-            <p class="link-page">nieuwekijk.nl/over-ons</p>
-
-            <meter class="meter-procent" max="100" value="67"></meter>
-
-            <p class="wgac-niveau">
-                <img class="check" src="./assets/check.svg" alt="check">
-                Niveau A
-            </p>
-        </article>
-
         <div class="all-pages">
             <article class="pages">
-                <h2>home</h2>
+                <h2 class="titel-pages">over-ons</h2>
+
+                <p class="link-page">nieuwekijk.nl/over-ons</p>
+
+                <meter class="meter-procent" max="100" value="67"></meter>
+
+                <p class="wgac-niveau">
+                    <img class="check" src="./assets/check.svg" alt="check">
+                    Niveau A
+                </p>
+            </article>
+
+            <article class="pages">
+                <h2 class="titel-pages">home</h2>
 
                 <p class="link-page">nieuwekijk.nl/home</p>
 
@@ -173,7 +188,7 @@
             </article>
 
             <article class="pages">
-                <h2>contact</h2>
+                <h2 class="titel-pages">contact</h2>
 
                 <p class="link-page">nieuwekijk.nl/contact</p>
 
@@ -191,7 +206,7 @@
             </article>
 
             <article class="pages">
-                <h2>missie</h2>
+                <h2 class="titel-pages">missie</h2>
 
                 <p class="link-page">nieuwekijk.nl/missie</p>
 
@@ -204,7 +219,7 @@
             </article>
 
             <article class="pages">
-                <h2>blog</h2>
+                <h2 class="titel-pages">blog</h2>
 
                 <p class="link-page">nieuwekijk.nl/blog</p>
 
@@ -227,7 +242,7 @@
             </article>
 
             <article class="pages">
-                <h2>blog-detail</h2>
+                <h2 class="titel-pages">blog-detail</h2>
 
                 <p class="link-page">nieuwekijk.nl/clog-detail</p>
 
@@ -243,7 +258,6 @@
                     Niveau A
                 </p>
             </article>
-
         </div>
 
     </main>

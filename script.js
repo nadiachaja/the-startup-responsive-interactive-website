@@ -21,4 +21,11 @@ function toDetailInfo(event){  //functie oproepen
 
 
 
+document.addEventListener('DOMContentLoaded', function () {
+    const shake = document.querySelectorAll(".update-site.new-errors");
+    shake.forEach(element => {
+        element.classList.add('shake')
+    });
+});
+
 

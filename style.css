@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+/* :root {
+  interpolate-size: allow-keywords;
+} */
+
 body {
   font-family: var(--font-family-general);
   margin: 0;
@@ -107,7 +111,17 @@ summary::after {
 .nav-details {
   margin-left: .5em;
   display: block;
+  /* overflow: hidden; */
 }
+
+/* details::details-content{
+font-size: var(--paragraph-m);
+block-size: 0;
+}
+
+details[open]::details-content{
+
+} */
 
 .nieuwekijk-nav-subtext {
   display: grid;
@@ -251,6 +265,20 @@ h2 {
   border: var(--border-warning);
   align-self: center;
   margin-right: 1.5em;
+}
+
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  15% { transform: rotate(3deg); }
+  30% { transform: rotate(-3deg); }
+  45% { transform: rotate(3deg); }
+  60% { transform: rotate(-3deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.update-site.new-errors.shake{
+  animation: shake 1s ease-in-out 10;
+  animation-delay: 1.5s;
 }
 
 .urgent {
@@ -570,6 +598,7 @@ h2 {
 
   .heading-text {
     font-size: var(--primary-m);
+    padding-block: .5em;
   }
 
   summary::after {

@@ -2,9 +2,9 @@
   box-sizing: border-box;
 }
 
-/* :root {
+:root {
   interpolate-size: allow-keywords;
-} */
+}
 
 body {
   font-family: var(--font-family-general);
@@ -111,17 +111,22 @@ summary::after {
 .nav-details {
   margin-left: .5em;
   display: block;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
-/* details::details-content{
+details::details-content{
 font-size: var(--paragraph-m);
 block-size: 0;
+transition-property: block-size,
+content-visibility;
+transition-duration: 1s;
+transition-behavior: allow-discrete;
 }
 
 details[open]::details-content{
-
-} */
+block-size: auto;
+block-size: calc-size(auto);
+}
 
 .nieuwekijk-nav-subtext {
   display: grid;

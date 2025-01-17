@@ -319,6 +319,7 @@ li {
   border-radius: var(--border-radius-xs);
   border: none;
   padding: .5em;
+  margin-right: 1em;
 }
 
 .filter-systeem{
@@ -334,7 +335,7 @@ button{
   margin: .2em;
   background: var(--background-color-button);
   color: var(--font-color-button);
-  padding: .5em;
+  padding: 1em;
 }
 
 .filter-text{

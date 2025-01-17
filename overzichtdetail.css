@@ -342,6 +342,11 @@ button{
   padding: 1em;
   font-size: var(--paragraph-s);
   filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.082));
+  font-weight: var(--font-weight-bold);
+}
+
+.page-extra{
+  border-radius: var(--border-radius-l);
 }
 
 .filter-text{
@@ -392,6 +397,8 @@ label{
 .ni{
   display: flex;
 }
+
+
 
 
 

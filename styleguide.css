@@ -9,6 +9,7 @@ body {
     --background-color-good: #BBFFD8;
     --background-color-nav: #ffffff;
     --background-color-cards:#ffffff;
+    --background-color-button:#0275FF;
 
     /*progress circle*/
     --progress-circle-background-darkcolor-info: #0275FF;
@@ -23,6 +24,7 @@ body {
     /*font*/
     --font-color-general: #5D666A;
     --font-color-secondary: #87929F;
+    --font-color-button:#CCE3FF;
     --font-color-nav: #0275FF;
     --font-color-good: #00883C;
     --font-color-error: #B50000;
@@ -76,6 +78,8 @@ body {
     /*-----------------------------------------------------*/
 
     /*border-radius*/
+    --border-radius-xxs: 5px;
+    --border-radius-xs: 10px;
     --border-radius-s: 15px;
     --border-radius-m: 20px;
 

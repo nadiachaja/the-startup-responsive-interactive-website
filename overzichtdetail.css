@@ -394,8 +394,11 @@ label {
 
 
 
-button.add-page {
+.add-page {
   background: var(--background-color-cards);
+  border-radius: var(--border-radius-m);
+  margin-left: 1.5em;
+  filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.082));
 }
 
 

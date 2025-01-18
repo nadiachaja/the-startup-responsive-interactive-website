@@ -445,13 +445,6 @@ label {
 }
 
 
-
-
-
-
-
-
-
 /*circle*/
 
 .visually-hidden {
@@ -538,10 +531,23 @@ label {
 
 
 
+/*media queries*/
+
+@media screen and (min-width:425px){
+  .page-tg{
+    margin-right: 6em;
+  }
+
+  .checks{
+    margin-left: 1em;
+  }
+}
+
 @media screen and (min-width:700px) {
 
   .heading-text {
     font-size: var(--primary-m);
     padding-block: .5em;
   }
+
 }

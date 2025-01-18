@@ -244,6 +244,7 @@ h4 {
   display: grid;
   justify-content: end;
   margin-right: 1.5em;
+  margin-top: 1.5em;
 }
 
 .circle.circle-as {

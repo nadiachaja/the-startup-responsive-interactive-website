@@ -32,7 +32,6 @@ a {
   text-decoration: none;
 }
 
-
 /*skiplink*/
 .skip {
   position: absolute;
@@ -177,10 +176,6 @@ summary {
   @media screen and (max-width:335px) {
     font-weight: var(--font-weight-bold)
   }
-
-  @media screen and (min-width:700px) {
-      /* left: 6em; */
-    }
 }
 
 /*logo accessdash*/
@@ -299,31 +294,6 @@ a.dashboard-nav-subtex {
     }
 }
 
-.link-site {
-  grid-column: 1;
-  display: flex;
-  margin: 0;
-  margin-left: 4em;
-
-  @media screen and (max-width:375px) {
-    grid-column: 1;
-    display: flex;
-    margin: 0;
-    margin-left: 4em;
-  }
-
-  @media screen and (min-width:700px) {
-      margin-left: 4.5em;
-    }
-}
-
-.update-site {
-  grid-column: 1;
-  grid-row: 3;
-  display: flex;
-  justify-self: center;
-}
-
 
 /*MAIN*/
 
@@ -425,6 +395,31 @@ h2 {
 .logo-cards {
   margin-right: .5em;
   margin-top: -.3em;
+}
+
+.link-site {
+  grid-column: 1;
+  display: flex;
+  margin: 0;
+  margin-left: 4em;
+
+  @media screen and (max-width:375px) {
+    grid-column: 1;
+    display: flex;
+    margin: 0;
+    margin-left: 4em;
+  }
+
+  @media screen and (min-width:700px) {
+      margin-left: 4.5em;
+    }
+}
+
+.update-site {
+  grid-column: 1;
+  grid-row: 3;
+  display: flex;
+  justify-self: center;
 }
 
 .update-site.ontoegankelijk {
@@ -540,7 +535,6 @@ h2 {
 }
 
 .circle {
-  /* bolletje in het midden van de div */
   display: grid;
   place-items: center;
   grid-row: 2;
@@ -549,13 +543,9 @@ h2 {
   justify-self: center;
   margin-right: 2.5em;
   margin-top: 1.2em;
-
-  /* vierkant en rond */
   width: 7em;
   aspect-ratio: 1;
   border-radius: 50%;
-
-  /* om de taartpunt te maken*/
   background-image:
     radial-gradient(white 2.5em,
       transparent 0),
@@ -577,23 +567,15 @@ h2 {
   &::after {
     content: "";
     display: block;
-    /* bolletje op elkaar in het midden van de div */
     grid-area: 1/1;
-
-    /* vierkant en rond */
     width: 1em;
     aspect-ratio: 1;
     border-radius: 50%;
-
-    /* kleur van de bar */
     background-color: var(--color-bar, #333);
   }
 
-  /* bolletje boven */
   &::before {
-    /* omhoog */
-    transform:
-      translateY(-3em);
+    transform: translateY(-3em);
 
     @media screen and (max-width:375px) {
       transform: translateY(-2em);
@@ -601,9 +583,7 @@ h2 {
   }
 
   &::after {
-    /* draaien en dan in die richting omhoog */
-    transform:
-      rotate(calc(var(--percentage) * .01turn)) translateY(-3em);
+    transform: rotate(calc(var(--percentage) * .01turn)) translateY(-3em);
 
     @media screen and (max-width:375px) {
       transform: rotate(calc(var(--percentage) * .01turn)) translateY(-2em);

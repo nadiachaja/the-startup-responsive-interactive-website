@@ -19,7 +19,7 @@ function toDetailInfo(event){  //functie oproepen
 
 
 
-
+//bewegen van de warning in de cards
 
 document.addEventListener('DOMContentLoaded', function () {
     const shake = document.querySelectorAll(".update-site.new-errors");

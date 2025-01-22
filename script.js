@@ -28,4 +28,12 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+//bewegen van de ontoegankelijk in de cards
+
+document.addEventListener('DOMContentLoaded', function () {
+    const wobble = document.querySelectorAll(".update-site.ontoegankelijk");
+    wobble.forEach(element => {
+        element.classList.add('wobble')
+    });
+});
 

@@ -608,7 +608,9 @@ button {
 }
 
 .pages {
-  display: flex;
+  &:not([hidden]) {
+    display: flex;
+  }
   flex-direction: column;
   justify-content: space-between;
   background-color: var(--background-color-cards);

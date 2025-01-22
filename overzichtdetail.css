@@ -222,11 +222,16 @@ details {
   padding: .1em;
   line-height: var(--line-height-general);
   font-family: var(--font-family-general);
+  font-size: var(--paragraph-s);
   color: var(--font-color-general);
   grid-column: 3;
   grid-row: 1;
   list-style-type: none;
   cursor: pointer;
+
+  &:hover{
+    text-decoration: underline;
+  }
 }
 
 a.nieuwekijk-nav-subtext {
@@ -239,9 +244,14 @@ a.nieuwekijk-nav-subtext {
   padding: .1em;
   line-height: var(--line-height-general);
   font-family: var(--font-family-general);
+  font-size: var(--paragraph-s);
   color: var(--font-color-general);
   list-style-type: none;
   cursor: pointer;
+
+  &:hover{
+    text-decoration: underline;
+  }
 
   @media screen and (min-width:700px) {
     margin-left: 2em;
@@ -260,6 +270,10 @@ a.dashboard-nav-subtex {
   line-height: var(--line-height-general);
   font-weight: var(--font-weight-bold);
   padding: .1em;
+
+  &:hover{
+    text-decoration: underline;
+  }
 
   @media screen and (max-width:335px) {
     font-weight: var(--font-weight-bold)
@@ -577,10 +591,41 @@ button {
   font-size: var(--paragraph-s);
   filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.082));
   font-weight: var(--font-weight-bold);
+  cursor: pointer;
+}
+
+.voldoet-niet:hover{
+  background: var(--progress-circle-background-lightcolor-info);
+  color: var(--progress-circle-background-darkcolor-info);
+}
+
+.voldoet:hover{
+  background: var(--progress-circle-background-lightcolor-info);
+  color: var(--progress-circle-background-darkcolor-info);
+}
+
+.a:hover{
+  background: var(--progress-circle-background-lightcolor-info);
+  color: var(--progress-circle-background-darkcolor-info);
+}
+
+.aa:hover{
+  background: var(--progress-circle-background-lightcolor-info);
+  color: var(--progress-circle-background-darkcolor-info);
+}
+
+.aaa:hover{
+  background: var(--progress-circle-background-lightcolor-info);
+  color: var(--progress-circle-background-darkcolor-info);
 }
 
 .page-extra {
   border-radius: var(--border-radius-l);
+
+  &:hover{
+    background: var(--progress-circle-background-lightcolor-info);
+    color: var(--progress-circle-background-darkcolor-info);
+  }
 }
 
 .filter-text {
@@ -596,6 +641,7 @@ button {
 .all-pages {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
+  cursor: pointer;
 
   @media screen and (min-width:600px) {
     display: grid;
@@ -617,6 +663,33 @@ button {
   border-radius: var(--border-radius-m);
   margin: 1.5em;
   filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.082));
+
+  &:hover{
+    filter: drop-shadow(0 0 0.75rem rgba(1, 1, 1, 0.22));
+  }
+}
+
+.add-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--background-color-cards);
+  border-radius: var(--border-radius-m);
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  margin-top: 1.5em;
+  margin-bottom: 2em;
+  padding: 2em;
+  filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.082));
+
+  &:hover{
+    filter: drop-shadow(0 0 0.75rem rgba(1, 1, 1, 0.22));
+  }
+}
+
+.add-page-text {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--paragraph-l);
 }
 
 .heading-page {
@@ -717,24 +790,6 @@ button {
   margin-right: 1.5em;
 }
 
-.add-page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: var(--background-color-cards);
-  border-radius: var(--border-radius-m);
-  margin-left: 1.5em;
-  margin-right: 1.5em;
-  margin-top: 1.5em;
-  margin-bottom: 2em;
-  padding: 2em;
-  filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.082));
-}
-
-.add-page-text {
-  font-weight: var(--font-weight-bold);
-  font-size: var(--paragraph-l);
-}
 
 
 /*circle*/

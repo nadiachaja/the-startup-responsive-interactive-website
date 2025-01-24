@@ -8,6 +8,9 @@ Future Ready Design is dit begonnen, omdat er een nieuwe wet komt voor bedrijven
 ## Inhoudsgave
   * [Beschrijving](#bedrijving)
   * [Kenmerken](#kenmerken)
+  * [Responsive](#responsive)
+  * [Ontwerpkeuzes](#ontwerpkeuzes)
+  * [Interactie](#interactie)
   * [Code Conventions](#CodeConventions)
   * [Licentie](#licentie)
 
